@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  background: #151514;
+  color: #b9c0c1;
+}
+/* PROJECTS */
+/* MAIN section of LANDING PAGE */
+.landing-page {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10% 90%;
+}
+
+/* Navbar */
+.landing-page .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #151514;
+  height: 100%;
+  z-index: 1;
+}
+
+.landing-page .navbar a {
+  flex: 15%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 120%;
+}
+
+.landing-page .navbar a img {
+  text-decoration: none;
+  color: #b9c0c1;
+  position: relative;
+  height: 80px;
+  width: 80px;
+  margin-left: 3rem;
+  margin-top: 1rem;
+  background: none;
+}
+
+.landing-page .navbar ul {
+  display: flex;
+  flex: 50%;
+  justify-content: space-evenly;
+  align-items: center;
+  text-decoration: none;
+  list-style-type: none;
+  height: 100%;
+}
+.landing-page .navbar ul li a {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+  color: #b9c0c1;
+  font-size: 1.2rem;
+}
+/* CONTACT */
+/* MAIN section of LANDING PAGE */
+.landing-page .hero-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  color: antiquewhite;
+  position: relative;
+}
+.hero-contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("/img/super-mario.jpg") no-repeat center center/cover;
+  opacity: 0.25;
+}
+.hero-text-box {
+  position: relative;
+}
+.hero-text-box h1 {
+  font-family: "DotGothic16", sans-serif;
+  font-size: 3rem;
+}
+.hero-text-box p {
+  padding-top: 2rem;
+  font-size: 2rem;
+}
+
+/* Section One || Contact me info */
+.section-three-contact {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    to left top,
+    #ff0000,
+    #ff5b00,
+    #ff8800,
+    #ffae00,
+    #ffd100,
+    #f6e000,
+    #eaf000,
+    #dbff00,
+    #c7ff00,
+    #b0ff00,
+    #97ff00,
+    #7aff00
+  );
+}
+.section-three-contact .contact-text-box {
+  display: flex;
+  font-size: 2rem;
+  line-height: 4rem;
+  text-align: center;
+  color: #151514;
+  flex: 2;
+}
+.link-icons {
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1;
+}
+
+/* Second section: Game at the end */
+#container {
+  height: 93vh;
+  /* background: #b9c0c1; */
+  background-image: url(/img/Dino_2.svg);
+}
+
+#bar {
+  width: 200px;
+  height: 20px;
+  position: absolute;
+  background-color: blue;
+}
+
+.bar-animation {
+  animation-direction: alternate;
+  animation-duration: 3s;
+  animation-name: oscillate;
+  animation-iteration-count: infinite;
+}
+.bar-animation-2 {
+  animation-direction: alternate;
+  animation-duration: 2s;
+  animation-name: oscillate;
+  animation-iteration-count: infinite;
+}
+
+.bar-flash {
+  animation-name: flash;
+  animation-duration: 200ms;
+  animation-iteration-count: 4;
+}
+
+@keyframes flash {
+  from {
+    background-color: blue;
+  }
+  to {
+    background-color: yellow;
+  }
+}
+
+@keyframes oscillate {
+  from {
+    left: 0%;
+  }
+
+  to {
+    left: calc(100% - 200px);
+  }
+}
+
+.shooting {
+  bottom: 0%;
+  left: 0%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: auto;
+  background-image: linear-gradient(
+    to right,
+    #f15a24,
+    #fb7a14,
+    #ff9900,
+    #ffb800,
+    #ffd600,
+    #e7dc01,
+    #cde016,
+    #b2e42b,
+    #86ce3a,
+    #5db743,
+    #359f48,
+    #008749
+  );
+}
+button {
+  /* position: fixed; */
+  justify-content: center;
+  align-self: center;
+  bottom: 0%;
+  left: 0%;
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+button:hover {
+  cursor: pointer;
+}
+#cannon {
+  position: relative;
+  justify-content: center;
+  align-self: flex-end;
+  bottom: 0%;
+  /* left: 50%; */
+  background-color: brown;
+  height: 50px;
+  width: 50px;
+}
+
+#shot {
+  justify-content: center;
+  align-self: center;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: green;
+  position: relative;
+  bottom: 30%;
+  left: 17%;
+  border: 2px solid white;
+}
+
+.shot-animation {
+  animation-name: shoot;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes shoot {
+  from {
+    bottom: 0vh;
+  }
+  to {
+    bottom: calc(100vh - 30px);
+  }
+}
+
+#score-box {
+  font-size: 20px;
+  color: black;
+  /* position: fixed; */
+  bottom: 0%;
+  right: 0%;
+  padding: 20px;
+  border: 1px solid grey;
+}
+
+/* Footer
+.footer {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */

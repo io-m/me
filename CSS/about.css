@@ -1,0 +1,460 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  background: #151514;
+  color: #b9c0c1;
+}
+/* ABOUT ME PAGE */
+/* Landing page */
+.landing-page {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10% 90%;
+}
+
+/* Navbar */
+.landing-page .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background: chartreuse; */
+  height: 100%;
+}
+
+.landing-page .navbar a {
+  flex: 15%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 120%;
+}
+
+.landing-page .navbar a img {
+  text-decoration: none;
+  color: #b9c0c1;
+  position: relative;
+  height: 80px;
+  width: 80px;
+  margin-left: 3rem;
+  margin-top: 1rem;
+}
+
+.landing-page .navbar ul {
+  display: flex;
+  flex: 50%;
+  justify-content: space-evenly;
+  align-items: center;
+  text-decoration: none;
+  list-style-type: none;
+  height: 100%;
+}
+.landing-page .navbar ul li a {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+  color: #b9c0c1;
+  font-size: 1.2rem;
+}
+/* ABOUT ME - nav is same as on homepage + landing page */
+.landing-page .hero-about {
+  font-family: "Special Elite", cursive;
+  margin: 0 2rem;
+  padding: 3rem 3rem;
+  line-height: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  /* background: #225095; */
+  height: 100%;
+  color: antiquewhite;
+  background: url("/img/museum.jpg") no-repeat center center/cover;
+}
+.landing-page .hero-about h1 {
+  font-size: 3rem;
+}
+.landing-page .hero-about p {
+  font-size: 2rem;
+}
+
+/* 1. EDUCATION */
+.section-one-education {
+  height: auto;
+  margin: 2rem;
+  margin-right: 2rem;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 33% 65%;
+  grid-template-rows: 1fr;
+  font-family: "Special Elite", cursive;
+  line-height: 3rem;
+}
+.section-one-education h1 {
+  font-size: 3rem;
+}
+.section-one-education p {
+  padding-top: 3rem;
+  font-size: 2rem;
+}
+.section-one-education .formal-education {
+  height: 100%;
+  background: #225095;
+  padding: 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+.red {
+  color: red;
+}
+.white {
+  color: white;
+}
+.blue {
+  color: blue;
+}
+.scroll {
+  color: #eee;
+  text-shadow: 0 0 5px #b9c0c1, 0 0 10px #b9c0c1, 0 0 10px #3ada1a,
+    0 0 20px #3ada1a, 0 0 20px #3ada1a, 0 0 25px #3ada1a, 0 0 30px #3ada1a;
+}
+.section-one-education .informal-education {
+  height: 100%;
+  background: #ffffff;
+  padding: 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  color: #151514;
+  line-height: 5rem;
+}
+
+/* 2. WEB DEVELOPMENT */
+.section-two-webdev {
+  height: 100vh;
+  margin: 2rem;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 65% 33%;
+  grid-template-rows: 1fr;
+  line-height: 3rem;
+}
+.section-two-webdev h1 {
+  font-size: 3rem;
+}
+.section-two-webdev p {
+  padding-top: 3rem;
+  font-size: 2rem;
+}
+.section-two-webdev .frontend {
+  height: 100%;
+  background: #fac901;
+  padding: 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  color: #151514;
+}
+
+.section-two-webdev .backend {
+  height: 100%;
+  background: #dd0100;
+  padding: 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  color: #b9c0c1;
+}
+
+.small-letters {
+  font-size: 0.8rem;
+}
+
+/* 3. SKILLS */
+.section-three-skills {
+  height: 100%;
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  color: #151514;
+}
+.section-three-skills .skills {
+  width: 80%;
+  font-size: 3rem;
+  line-height: 6rem;
+  text-align: center;
+}
+.skillbar {
+  position: relative;
+  display: block;
+  margin-bottom: 2rem;
+  width: 100%;
+  background: #eee;
+  height: 60px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -webkit-transition: 0.4s linear;
+  -moz-transition: 0.4s linear;
+  -ms-transition: 0.4s linear;
+  -o-transition: 0.4s linear;
+  transition: 0.4s linear;
+  -webkit-transition-property: width, background-color;
+  -moz-transition-property: width, background-color;
+  -ms-transition-property: width, background-color;
+  -o-transition-property: width, background-color;
+  transition-property: width, background-color;
+}
+
+.skillbar-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 100%;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #ffffff;
+  background: #6adcfa;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.skillbar-title span {
+  display: block;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 15px 20px;
+  height: 100%;
+  line-height: 35px;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.skillbar-bar {
+  height: 60px;
+  width: 0px;
+  background: #6adcfa;
+  border-radius: 10px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+
+.skill-bar-percent {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-size: 11px;
+  height: 35px;
+  line-height: 35px;
+  color: #ffffff;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+/* 4. HOBBIES */
+.section-four-hobbies {
+  height: auto;
+  width: 100%;
+  margin-top: 2rem;
+  /* margin-left: 2rem; */
+  margin-right: 2rem;
+  padding: 2rem;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 600px));
+  grid-auto-rows: auto;
+  grid-auto-flow: dense;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    to bottom,
+    #151514,
+    #1a221b,
+    #11312d,
+    #003f4b,
+    #004a6c,
+    #004a6c,
+    #004a6c,
+    #004a6c,
+    #003f4b,
+    #11312d,
+    #1a221b,
+    #151514
+  );
+  color: #b9c0c1;
+}
+.vertical {
+  grid-row: span 2;
+}
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(14, 13, 13, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.blur {
+  backdrop-filter: blur;
+}
+
+.section-four-hobbies > * {
+  transform: translateY(20px);
+  transition: transform 0.5s;
+}
+.section-four-hobbies > *:hover {
+  transform: translateX(0px);
+}
+
+* > :hover {
+  opacity: 1;
+}
+.image-title {
+  font-size: 3rem;
+  color: #b9c0c1;
+  text-align: center;
+  padding: 1rem;
+}
+.image-description p {
+  font-size: 1.5rem;
+  color: #b9c0c1;
+  text-align: center;
+  line-height: 2rem;
+}
+.section-four-hobbies .hobby-1 img {
+  width: 100%;
+  height: 364px;
+  box-shadow: 1px 0px 9px 3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 0px 9px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 0px 9px 3px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+  position: relative;
+}
+.section-four-hobbies .hobby-2 img {
+  width: 100%;
+  box-shadow: 1px 0px 9px 3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 0px 9px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 0px 9px 3px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+  position: relative;
+}
+.section-four-hobbies .hobby-3 img {
+  width: 100%;
+  height: 364px;
+  box-shadow: 1px 0px 9px 3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 0px 9px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 0px 9px 3px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+  position: relative;
+}
+.section-four-hobbies .hobby-4 img {
+  width: 100%;
+  box-shadow: 1px 0px 9px 3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 0px 9px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 0px 9px 3px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+  position: relative;
+}
+.section-four-hobbies .hobby-5 img {
+  width: 100%;
+  height: 364px;
+  box-shadow: 1px 0px 9px 3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 0px 9px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 0px 9px 3px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+  position: relative;
+}
+.section-four-hobbies .hobby-6 img {
+  width: 100%;
+  height: 300px;
+  box-shadow: 1px 0px 9px 3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 0px 9px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 0px 9px 3px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+  position: relative;
+}
+.section-four-hobbies .hobby-7 img {
+  width: 100%;
+  height: 364px;
+  box-shadow: 1px 0px 9px 3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 0px 9px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 0px 9px 3px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+  position: relative;
+}
+.section-four-hobbies .hobby-8 img {
+  width: 100%;
+  height: 364px;
+  box-shadow: 1px 0px 9px 3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 0px 9px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 0px 9px 3px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+  position: relative;
+}
+.section-four-hobbies .hobby-9 img {
+  width: 100%;
+  box-shadow: 1px 0px 9px 3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 0px 9px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 0px 9px 3px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+  position: relative;
+}
+
+/* Footer */
+.footer {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+.footer i {
+  color: yellow;
+}
+.copyright,
+.social-icons,
+.mail {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.social-icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+.copyright,
+.mail {
+  font-size: 1.3rem;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="CSS/contact.css">
+    <title>Web Developer || Josip Miljak </title>
+</head>
+
+<body>
+    <!-- Main navbar || Hamburger AND landing page -->
+    <div class="landing-page">
+        <nav class="navbar">
+            <a href="index.html"><img src="/img/Name_Icon.png" alt=""></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" >About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html" class="current">Contact</a></li>
+            </ul>
+        </nav>
+        <section class="hero-contact">
+            <div class="hero-text-box">
+                <h1>If you would like to contact me</h1>
+                <p>just scroll a bit lower and you will find my info</p>
+            </div>
+            
+        </section>
+    </div>
+
+
+    <!-- 1. First section is about looking for opportunity in tech field -->
+    <div class="section-three-contact">
+        <div class="link-icons">
+            <a href="https://www.linkedin.com/in/josip-miljak/" target="_blank"><i class="fab fa-linkedin-in fa-3x"></i></a>
+            <a href="https://www.facebook.com/zachdust2111/" target="_blank"><i class="fab fa-facebook fa-3x"></i></a>
+            <a href="https://github.com/io-m" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+        </div>
+        <div class="contact-text-box">
+            <p>
+                I see myself as LinkedIn newbie. I made my profile recently.
+            </p>
+            <p>
+                I am relatively active on Facebook. I consider it solid platform to show not so profesional side of yourself.
+            </p>
+            <p>
+                Github is great for us programmers. I can't stress that fact enough.
+            </p>
+        </div>
+    </div>
+
+
+    <!-- 2. Second section is about game -->
+
+        <div id="container">
+            <div id="bar" class="bar-animation"></div>
+        </div>
+        
+        <div class="shooting">
+            <button>Shoot</button>
+
+            <div id="cannon">
+                <div id="shot">
+                </div>
+            </div>
+            
+            <div id="score-box">
+                <span>Score : </span><span id="score">0</span>
+            </div>
+        </div>
+        
+        
+        <audio preload="auto" src="https://s3-us-west-2.amazonaws.com/embedsound/bomb.mp3" id="collision-sound"></audio>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <script src="/js/game.js"></script>
+</body>
+
+</html>
